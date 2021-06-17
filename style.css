@@ -1,7 +1,120 @@
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* General Styles */
+:root {
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+   --transparent-white: hsla(0, 0%, 100%, 0.75);
+   --light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: 15px;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   margin: 0 auto;
+   max-width: 900px;
+   width: 90%;
+}
+
+.btn {
+   display: block;
+}
+
+.card-one,
+.card-two,
+.card-three {
+   max-height: 500px;
+   padding: 4em;
+}
+
+.card-one {
+   background-color: var(--bright-orange);
+}
+
+.card-two {
+   background-color: var(--dark-cyan);
+}
+
+.card-three {
+   background-color: var(--very-dark-cyan);
+}
+
+/* Typography */
+
+h1 {
+   color: var(--light-gray);
+   font-family: 'Big Shoulders Display', sans-serif;
+   font-size: 2rem;
+   margin: 1em 0;
+   text-transform: uppercase;
+}
+
+p {
+   color: var(--transparent-white);
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   line-height: 1.5;
+   margin-bottom: 3em;
+}
+
+.card-link {
+   background: var(--light-gray);
+   border: 2px solid var(--light-gray);
+   border-radius: 50px;
+   font-family: 'Lexend Deca', sans-serif;
+   margin: 1em 0;
+   padding: 1em 2em;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: background 0.5s ease;
+}
+
+.card-link:hover,
+.card-link:focus {
+   background: transparent;
+   border: 2px solid var(--light-gray);
+   color: var(--transparent-white);
+}
+
+.color-one {
+   color: var(--bright-orange);
+}
+
+.color-two {
+   color: var(--dark-cyan);
+}
+
+.color-three {
+   color: var(--very-dark-cyan);
+}
+
+/* Footer styles */
 .attribution {
    font-size: 11px;
    text-align: center;
 }
 .attribution a {
    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 980px) {
+   .container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
 }
