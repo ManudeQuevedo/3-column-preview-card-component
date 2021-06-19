@@ -18,9 +18,7 @@ function Cards() {
                Ideal for cruising in the city or on your next road trip.
             </p>
 
-            <div className='btn'>
-               <button className='card-link color-one'>learn more</button>
-            </div>
+            <button className='card-link color-one btn'>learn more</button>
          </div>
 
          <div className='card-two'>
@@ -33,9 +31,7 @@ function Cards() {
                Perfect for your next family vacation and off-road adventures.
             </p>
 
-            <div className='btn'>
-               <button className='card-link color-two'>learn more</button>
-            </div>
+            <button className='card-link color-two btn'>learn more</button>
          </div>
 
          <div className='card-three'>
@@ -48,9 +44,7 @@ function Cards() {
                the enhanced comfort of a luxury rental and arrive in style.
             </p>
 
-            <div className='btn'>
-               <button className='card-link color-three'>learn more</button>
-            </div>
+            <button className='card-link color-three btn'>learn more</button>
          </div>
       </React.Fragment>
    );
